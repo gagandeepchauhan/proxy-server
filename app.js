@@ -24,6 +24,11 @@ app.get('/',async (req,res)=>{
         })
     }
 })
+app.get("/status",(req,res)=>{
+    res.json({
+        status: "ok"
+    })
+})
 
 app.listen(PORT,()=>{
     console.log(`APP STARTED AT ${PORT}`)
